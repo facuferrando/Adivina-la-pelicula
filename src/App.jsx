@@ -154,8 +154,9 @@ function App() {
 
         {showPremio()}
         {pista && <p className='bg-white text-black '> {overview}</p>}
-
+        <p className='bg-white flex gap-1'>By <a target='_blank' className='flex' href='https://github.com/facuferrando'>Facu <img width={"25px"} src='/github.png' /></a></p>
       </section >
+
     </>
   )
 }
