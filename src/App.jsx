@@ -158,8 +158,3 @@ function App() {
 
 export default App
 
-// API key
-// 18d5f6f73d003252a83c24e06dffc33e
-
-// Token de acceso de lectura a la API
-// eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxOGQ1ZjZmNzNkMDAzMjUyYTgzYzI0ZTA2ZGZmYzMzZSIsInN1YiI6IjY1YTY4YzI5Zjc0ZjVmMDEyMjY5MDFiOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jH47JLy6SYXHy_tkKfWOL2SmE5PCwLBqJof3sjbD080
