@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+
 function App() {
   const [data, setData] = useState([]);
   const [inc, setInc] = useState('')
@@ -26,7 +27,6 @@ function App() {
     let faltan = [] //Este es el array con las posiciones faltantes
     for (let j = 0; j < faltantes; j++) {
       faltan = [...faltan, puedenFaltar[Math.floor(Math.random() * puedenFaltar.length)]]
-      //faltan = [...faltan, Math.floor(Math.random() * puedenFaltar.length + 1)]
     }
     let modificada = [] //este es el array con la palabra modificada, las letras faltantes son asteriscos (*)
 
@@ -44,13 +44,7 @@ function App() {
   }
 
 
-  const options = {
-    method: 'GET',
-    headers: {
-      accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxOGQ1ZjZmNzNkMDAzMjUyYTgzYzI0ZTA2ZGZmYzMzZSIsInN1YiI6IjY1YTY4YzI5Zjc0ZjVmMDEyMjY5MDFiOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jH47JLy6SYXHy_tkKfWOL2SmE5PCwLBqJof3sjbD080'
-    }
-  };
+  //options es donde se guarda el bearer Key
 
   function buscarPeli() {
     idioma == 'Español' && fetch('https://api.themoviedb.org/3/movie/top_rated?language=es-ES&page=1', options)
